@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Tahoma", "Arial", sans-serif;
+  background: #f3f5f8;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.login-card {
+  max-width: 520px;
+  margin-top: 40px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #fff1e8;
+  color: #a04400;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 16px 0 8px;
+  line-height: 1.35;
+}
+
+.description {
+  margin-bottom: 24px;
+  color: #667085;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cfd4dc;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: 2px solid #c4c9d1;
+  border-color: transparent;
+}
+
+form button {
+  margin-top: 14px;
+  padding: 14px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.score-box {
+  min-width: 130px;
+  height: fit-content;
+  padding: 12px;
+  border: 1px solid #d5dae1;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  background: black;
+  border-radius: 14px;
+}
+
+.video-wrapper > div,
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.instruction {
+  margin-top: 14px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.question-modal {
+  width: 100%;
+  max-width: 600px;
+  padding: 26px;
+  background: white;
+  border-radius: 18px;
+}
+
+.question-number {
+  font-weight: 700;
+  color: #667085;
+}
+
+.choice-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.choice-button {
+  padding: 15px;
+  border: 1px solid #cfd4dc;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.choice-button:hover {
+  background: #f4f6f8;
+}
+
+.error-message {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #fff1f1;
+  color: #b42318;
+}
+
+.completion-box {
+  padding: 48px 20px;
+  text-align: center;
+  border: 1px solid #d5dae1;
+  border-radius: 14px;
+}
+
+.final-score {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .lesson-header {
+    flex-direction: column;
+  }
+
+  .score-box {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
