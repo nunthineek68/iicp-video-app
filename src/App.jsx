@@ -120,8 +120,8 @@ function App() {
     if (error) {
       console.error(error);
       setErrorMessage(
-        "ไม่สามารถเริ่มบทเรียนได้ กรุณาตรวจสอบการเชื่อมต่อ Supabase"
-      );
+  `ไม่สามารถเริ่มบทเรียนได้: ${error.message}`
+);
       return;
     }
 
