@@ -1,12 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const supabaseUrl = "https://hcotkzxuxdvlofhpgjrw.supabase.co";
 
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error(
-    "ไม่พบค่า Supabase กรุณาตรวจสอบไฟล์ .env.local"
-  );
-}
+const supabaseKey =
+  "sb_publishable_BUrYQ50R6r-DdhdrjOMrkA_gkCDRRU8";
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
