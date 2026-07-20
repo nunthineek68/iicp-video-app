@@ -372,7 +372,7 @@ function App() {
             <h2>เรียนจบแล้ว</h2>
             <p>ระบบบันทึกผลการเรียนเรียบร้อยแล้ว</p>
             <div className="final-score">
-              คะแนน {score}/4
+              ตอบคำถามครบทั้งหมด {answeredCount}/4 ข้อ
             </div>
           </section>
         )}
